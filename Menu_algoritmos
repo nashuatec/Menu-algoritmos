@@ -1,0 +1,42 @@
+
+def menu():
+    print("Escolha uma opção:")
+    print("1 maior idade")
+    print("2 para impar ou par")
+    print("3 para negativo ou positivo")
+    opcao = int(input("digite o numero da opcao desejada: "))
+
+    if opcao == 1: maior_idade()
+    elif opcao == 2: negativo_pos()
+    elif opcao == 3: par_impar()
+    else:
+        print("opcao invalida. Por favor escolha uma opcao valida")
+
+def maior_idade():
+    Idade = int(input("informe o ano de nascimento:"))
+    ano_atual = int(2024)
+    resultado = (ano_atual - (Idade))
+    if resultado >=18:
+        print(f"O individuo tem {resultado} anos e portanto é MAIOR de idade")
+    else:
+        print(f"O individuo tem {resultado} anos e portante é MENOR de idade")
+
+def par_impar():
+    #numero par ou impar
+    numeroimpar1 = int(input("digite o primeiro numero"))
+    rest = numeroimpar1 % 2
+    if rest ==0:
+     print("esse numero eh par")
+    else:
+        print("numero impar")
+
+def negativo_pos():
+    numeronega1 = int(input("informe um numero"))
+    if numeronega1 >0:
+        print("numero positivo")
+    elif numeronega1 <0 :
+         print("numero negativo")
+    else:
+     print("numero igual a 0")
+
+menu()
