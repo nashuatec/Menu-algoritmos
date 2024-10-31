@@ -1,0 +1,30 @@
+lista = []
+
+def menu():
+    print('menu')
+    print('1 pra add')
+    print('2 pra rem')
+    print('3 pra ver')
+    print('4 Sair')
+
+while True: 
+    menu()  # Chama a função para mostrar o menu
+    opcao = input('Digite uma opcao: ')  # Lê a opção do usuário
+
+    if opcao == '1':
+        nomealuno = input('Digite o nome: ')
+        lista.append(nomealuno)
+    elif opcao == '2':
+        removido = input('Digite o nome para remover: ')
+        if removido in lista:
+            lista.remove(removido)
+        else:
+            print('Nao achei esse aluno')
+    elif opcao == '3':
+        print('Esses sao os alunos:')
+        print(lista)
+    elif opcao == '4':
+        print('Saindo...')
+        break
+    else:
+        print('Opcao invalida. Tente novamente.')
