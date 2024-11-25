@@ -8,8 +8,8 @@ def menu():
     print('4 Sair')
 
 while True: 
-    menu()  # Chama a função para mostrar o menu
-    opcao = input('Digite uma opcao: ')  # Lê a opção do usuário
+    menu() 
+    opcao = input('Digite uma opcao: ')  
 
     if opcao == '1':
         nomealuno = input('Digite o nome: ')
